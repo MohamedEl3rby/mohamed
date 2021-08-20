@@ -1,24 +1,13 @@
-import"package:flutter/material.dart" ;
+import "package:flutter/material.dart";
+import 'package:mohamed/tabbar.dart';
 import 'home.dart';
 import 'fav.dart';
 import 'package:mohamed/search.dart';
 import 'hav.dart';
-void main(){
+
+void main() {
   runApp(new MaterialApp(
     title: "layout-Column",
-    home:new HavScreen(
-
-
-
-    ),
-
-
-
-
-  )
-
-
-  );
-
-
+    home: new MainTapbarr2(),
+  ));
 }
