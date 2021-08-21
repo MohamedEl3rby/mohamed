@@ -68,12 +68,12 @@ class HavScreen extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.announcement,
+                    Icons.star,
                     color: Theme.of(context).accentColor,
                     size: 25,
                   ),
                   title: Text(
-                    ("تقيمات الخدمات"),
+                    ("تقييمات الخدمات"),
                     style: const TextStyle(fontSize: 15),
                   ),
                   trailing: const Icon(
@@ -85,7 +85,7 @@ class HavScreen extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.portrait,
+                    Icons.announcement,
                     color: Theme.of(context).accentColor,
                     size: 25,
                   ),
@@ -102,7 +102,7 @@ class HavScreen extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.portrait,
+                    Icons.style,
                     color: Theme.of(context).accentColor,
                     size: 25,
                   ),
@@ -119,7 +119,7 @@ class HavScreen extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.portrait,
+                    Icons.settings_applications,
                     color: Theme.of(context).accentColor,
                     size: 25,
                   ),
@@ -137,7 +137,7 @@ class HavScreen extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.portrait,
+                    Icons.apps_sharp,
                     color: Theme.of(context).accentColor,
                     size: 25,
                   ),
