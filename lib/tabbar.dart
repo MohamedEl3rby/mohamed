@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mohamed/MainScreen.dart';
 import 'package:mohamed/hav.dart';
 import 'package:mohamed/home.dart';
+
+import 'fav.dart';
 
 class MainTapbarr2 extends StatefulWidget {
   static String routeName = '/mainTapbarr2';
@@ -37,28 +40,16 @@ class _MainTapbarr2State extends State<MainTapbarr2>
       body: TabBarView(
         physics: NeverScrollableScrollPhysics(),
         children: <Widget>[
+          MainScreen(),
+          FavScreen(),
           Home(),
-          HavScreen(),
-          HavScreen(),
-          HavScreen(),
+          Home(),
           HavScreen()
-          // StoreScreen(),
-          // AddStoreView(),
-          // SettingsFormanScreen(),
         ],
         controller: _tabController,
       ),
-      bottomNavigationBar:
-          //Container(
-          //  padding: EdgeInsets.all(30.0),
-          // child: ClipRRect(
-          // borderRadius: BorderRadius.all(
-          // Radius.circular(50.0),
-          // ),
-          Container(
+      bottomNavigationBar: Container(
         width: double.infinity,
-        // margin: EdgeInsets.symmetric(horizontal: 10),
-        // padding: EdgeInsets.symmetric(horizontal: 20),
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
@@ -72,10 +63,7 @@ class _MainTapbarr2State extends State<MainTapbarr2>
         child: TabBar(
           unselectedLabelColor: Colors.grey,
           labelColor: Colors.green,
-          indicator: UnderlineTabIndicator(
-              // borderSide: BorderSide(color: Colors.black, width: 0.0),
-              //insets: EdgeInsets.fromLTRB(50.0, 0.0, 50.0, 40.0),
-              ),
+          indicator: UnderlineTabIndicator(),
           indicatorColor: Colors.green,
           labelStyle: TextStyle(fontSize: 10),
           tabs: <Widget>[
