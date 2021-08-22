@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-import 'package:mohamed/lab.dart';
 import 'package:mohamed/nom.dart';
 import 'package:mohamed/tabbar.dart';
 import 'home.dart';
@@ -10,6 +9,6 @@ import 'hav.dart';
 void main() {
   runApp(new MaterialApp(
     title: "layout-Column",
-    home: new LabScreen(),
+    home: new NomScreen(),
   ));
 }
